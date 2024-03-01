@@ -45,9 +45,9 @@
       
         <tags>
             
-            <tag> iOS </tag>
-            
             <tag> Flutter </tag>
+            
+            <tag> iOS </tag>
             
         </tags>
       
@@ -110,31 +110,6 @@
     
     
     <entry>
-      <title>ios 多播网络（Multicast）应用权限</title>
-      <link href="/posts/b76d697c.html"/>
-      <url>/posts/b76d697c.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>用户将手机连接到路由器后，利用路由器广播报文与设备进行通信配对。对手机、路由器、App 有兼容性或者权限要求。<br>苹果（Apple.com）为提升安全性引入 Multicast 权限，在iOS14 之后需要申请该权限</p><h1 id="申请填写"><a href="#申请填写" class="headerlink" title="申请填写"></a>申请填写</h1><p>这个过程大概要 5 个工作日，需要等待apple回复邮件</p><h2 id="1-前往苹果开发者官网申请-Multicast-权限"><a href="#1-前往苹果开发者官网申请-Multicast-权限" class="headerlink" title="1.前往苹果开发者官网申请 Multicast 权限"></a>1.前往苹果开发者官网申请 <a href="https://developer.apple.com/contact/request/networking-multicast" title="Multicast 权限">Multicast 权限</a></h2><p><img src="https://raw.githubusercontent.com/zenghuayang/resources/master/202402271342416.png" alt="image.png|500"></p><h2 id="2-填写信息"><a href="#2-填写信息" class="headerlink" title="2.填写信息"></a>2.填写信息</h2><div class="table-container"><table><thead><tr><th>填写项</th><th>填写示例</th><th>注意事项</th></tr></thead><tbody><tr><td>App Name</td><td></td><td>主账号申请</td></tr><tr><td>App Store URL</td><td></td><td></td></tr><tr><td>Apple ID of App</td><td></td><td></td></tr><tr><td>App Category</td><td></td><td></td></tr><tr><td>Describe the main purpose of your app</td><td></td><td>应用描述</td></tr><tr><td>Explain why your app needs to <br>send multicast or broadcast traffic, <br>or browse for all Bonjour service types.</td><td></td><td>申请这个权限的用途</td></tr></tbody></table></div><h1 id="申请成功后配置"><a href="#申请成功后配置" class="headerlink" title="申请成功后配置"></a>申请成功后配置</h1><p>申请成功后，apple 会回复一个邮件告知申请成功了</p><h2 id="开发者后台为APP增加Multicast配置"><a href="#开发者后台为APP增加Multicast配置" class="headerlink" title="开发者后台为APP增加Multicast配置"></a>开发者后台为APP增加Multicast配置</h2><h3 id="1-进入-开发者后台-gt-Certificates-IDs-amp-Profiles。"><a href="#1-进入-开发者后台-gt-Certificates-IDs-amp-Profiles。" class="headerlink" title="1.进入 开发者后台 -&gt; Certificates, IDs &amp; Profiles。"></a>1.进入 开发者后台 -&gt; Certificates, IDs &amp; Profiles。</h3><p><img src="https://raw.githubusercontent.com/zenghuayang/resources/master/202402271356637.png" alt="image.png|500"></p><h3 id="2-选择-App-对应的-Identifiers"><a href="#2-选择-App-对应的-Identifiers" class="headerlink" title="2.选择 App 对应的 Identifiers"></a>2.选择 App 对应的 Identifiers</h3><p><img src="https://raw.githubusercontent.com/zenghuayang/resources/master/202402271403420.png" alt="image.png|500"></p><h3 id="3-勾选-Multicast-Networking，然后点击-保存。"><a href="#3-勾选-Multicast-Networking，然后点击-保存。" class="headerlink" title="3.勾选 Multicast Networking，然后点击 保存。"></a>3.勾选 Multicast Networking，然后点击 <strong>保存</strong>。</h3><p><img src="https://raw.githubusercontent.com/zenghuayang/resources/master/202402271404937.png" alt="image.png|500"></p><h2 id="App项目工程的环境配置文件"><a href="#App项目工程的环境配置文件" class="headerlink" title="App项目工程的环境配置文件"></a>App项目工程的环境配置文件</h2><p>app的的xxxx.entitlements配置文件中添加com.apple.developer.networking.multicast的布尔值为yes<br><img src="https://raw.githubusercontent.com/zenghuayang/resources/master/202402271405327.png" alt="image.png|500"></p><h2 id="info-plist-文件中-添加本地网络使用权限"><a href="#info-plist-文件中-添加本地网络使用权限" class="headerlink" title="info.plist 文件中,添加本地网络使用权限"></a>info.plist 文件中,添加本地网络使用权限</h2><p><code>Privacy - Local Network Usage Description</code></p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">url: https://blog.csdn.net/dragoonnet/article/details/128416927?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-128416927-blog-130459362.235%5Ev38%5Epc_relevant_anti_t3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-128416927-blog-130459362.235%5Ev38%5Epc_relevant_anti_t3&amp;utm_relevant_index=2</span><br><span class="line">title: &quot;多播网络（Multicast）应用权限_imulticast networking-CSDN博客&quot;</span><br><span class="line">description: &quot;文章浏览阅读1.9k次。本文介绍如何在苹果开发者官网申请（Multicast）应用权限，从而正常使用 Wi-Fi 快连配网功能。本文适用于 iOS 版本的 OEM App 或者其他有相同需求的 App。_imulticast networking&quot;</span><br><span class="line">host: blog.csdn.net</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      <categories>
-          
-          <category> 移动开发 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> iOS </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Xcode 不同Target多语言词条同步</title>
       <link href="/posts/9b819cf7.html"/>
       <url>/posts/9b819cf7.html</url>
@@ -156,6 +131,31 @@
             <tag> Xcode </tag>
             
             <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ios 多播网络（Multicast）应用权限</title>
+      <link href="/posts/b76d697c.html"/>
+      <url>/posts/b76d697c.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>用户将手机连接到路由器后，利用路由器广播报文与设备进行通信配对。对手机、路由器、App 有兼容性或者权限要求。<br>苹果（Apple.com）为提升安全性引入 Multicast 权限，在iOS14 之后需要申请该权限</p><h1 id="申请填写"><a href="#申请填写" class="headerlink" title="申请填写"></a>申请填写</h1><p>这个过程大概要 5 个工作日，需要等待apple回复邮件</p><h2 id="1-前往苹果开发者官网申请-Multicast-权限"><a href="#1-前往苹果开发者官网申请-Multicast-权限" class="headerlink" title="1.前往苹果开发者官网申请 Multicast 权限"></a>1.前往苹果开发者官网申请 <a href="https://developer.apple.com/contact/request/networking-multicast" title="Multicast 权限">Multicast 权限</a></h2><p><img src="https://raw.githubusercontent.com/zenghuayang/resources/master/202402271342416.png" alt="image.png|500"></p><h2 id="2-填写信息"><a href="#2-填写信息" class="headerlink" title="2.填写信息"></a>2.填写信息</h2><div class="table-container"><table><thead><tr><th>填写项</th><th>填写示例</th><th>注意事项</th></tr></thead><tbody><tr><td>App Name</td><td></td><td>主账号申请</td></tr><tr><td>App Store URL</td><td></td><td></td></tr><tr><td>Apple ID of App</td><td></td><td></td></tr><tr><td>App Category</td><td></td><td></td></tr><tr><td>Describe the main purpose of your app</td><td></td><td>应用描述</td></tr><tr><td>Explain why your app needs to <br>send multicast or broadcast traffic, <br>or browse for all Bonjour service types.</td><td></td><td>申请这个权限的用途</td></tr></tbody></table></div><h1 id="申请成功后配置"><a href="#申请成功后配置" class="headerlink" title="申请成功后配置"></a>申请成功后配置</h1><p>申请成功后，apple 会回复一个邮件告知申请成功了</p><h2 id="开发者后台为APP增加Multicast配置"><a href="#开发者后台为APP增加Multicast配置" class="headerlink" title="开发者后台为APP增加Multicast配置"></a>开发者后台为APP增加Multicast配置</h2><h3 id="1-进入-开发者后台-gt-Certificates-IDs-amp-Profiles。"><a href="#1-进入-开发者后台-gt-Certificates-IDs-amp-Profiles。" class="headerlink" title="1.进入 开发者后台 -&gt; Certificates, IDs &amp; Profiles。"></a>1.进入 开发者后台 -&gt; Certificates, IDs &amp; Profiles。</h3><p><img src="https://raw.githubusercontent.com/zenghuayang/resources/master/202402271356637.png" alt="image.png|500"></p><h3 id="2-选择-App-对应的-Identifiers"><a href="#2-选择-App-对应的-Identifiers" class="headerlink" title="2.选择 App 对应的 Identifiers"></a>2.选择 App 对应的 Identifiers</h3><p><img src="https://raw.githubusercontent.com/zenghuayang/resources/master/202402271403420.png" alt="image.png|500"></p><h3 id="3-勾选-Multicast-Networking，然后点击-保存。"><a href="#3-勾选-Multicast-Networking，然后点击-保存。" class="headerlink" title="3.勾选 Multicast Networking，然后点击 保存。"></a>3.勾选 Multicast Networking，然后点击 <strong>保存</strong>。</h3><p><img src="https://raw.githubusercontent.com/zenghuayang/resources/master/202402271404937.png" alt="image.png|500"></p><h2 id="App项目工程的环境配置文件"><a href="#App项目工程的环境配置文件" class="headerlink" title="App项目工程的环境配置文件"></a>App项目工程的环境配置文件</h2><p>app的的xxxx.entitlements配置文件中添加com.apple.developer.networking.multicast的布尔值为yes<br><img src="https://raw.githubusercontent.com/zenghuayang/resources/master/202402271405327.png" alt="image.png|500"></p><h2 id="info-plist-文件中-添加本地网络使用权限"><a href="#info-plist-文件中-添加本地网络使用权限" class="headerlink" title="info.plist 文件中,添加本地网络使用权限"></a>info.plist 文件中,添加本地网络使用权限</h2><p><code>Privacy - Local Network Usage Description</code></p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">url: https://blog.csdn.net/dragoonnet/article/details/128416927?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-128416927-blog-130459362.235%5Ev38%5Epc_relevant_anti_t3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-128416927-blog-130459362.235%5Ev38%5Epc_relevant_anti_t3&amp;utm_relevant_index=2</span><br><span class="line">title: &quot;多播网络（Multicast）应用权限_imulticast networking-CSDN博客&quot;</span><br><span class="line">description: &quot;文章浏览阅读1.9k次。本文介绍如何在苹果开发者官网申请（Multicast）应用权限，从而正常使用 Wi-Fi 快连配网功能。本文适用于 iOS 版本的 OEM App 或者其他有相同需求的 App。_imulticast networking&quot;</span><br><span class="line">host: blog.csdn.net</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 移动开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> iOS </tag>
             
         </tags>
       
