@@ -11,6 +11,12 @@
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
       
         <tags>
             
@@ -39,9 +45,9 @@
       
         <tags>
             
-            <tag> Flutter </tag>
-            
             <tag> iOS </tag>
+            
+            <tag> Flutter </tag>
             
         </tags>
       
@@ -66,9 +72,9 @@
       
         <tags>
             
-            <tag> Mac </tag>
-            
             <tag> Appium </tag>
+            
+            <tag> Mac </tag>
             
         </tags>
       
@@ -93,9 +99,9 @@
       
         <tags>
             
-            <tag> Mac </tag>
-            
             <tag> Appium </tag>
+            
+            <tag> Mac </tag>
             
         </tags>
       
@@ -333,6 +339,12 @@
       
         <content type="html"><![CDATA[<p>hexo + github page 搭建个人博客说明<br>使用 github action 持续集成ci</p><p>思路：<br>1.搭建两个git仓库，一个是部署仓库 一个是源码仓库<br>2.修改内容 push 到源码仓库，使用action同步到部署仓库</p><p>参考链接：<br><a href="https://www.cnblogs.com/mfrank/p/12829882.html">【Hexo】使用Hexo+github pages+travis ci 实现自动化部署</a><br><a href="https://blog.anheyu.com/posts/asdx.html">使用 Github Action 自动部署</a><br><a href="https://www.bilibili.com/video/BV1nd4y1A7Wt/?spm_id_from=333.788">留言板</a><br><a href="https://kemushi54.github.io/2019/04/01/%E7%AD%86%E8%A8%98-%E6%89%93%E9%80%A0%E8%87%AA%E5%B7%B1%E7%9A%84-blog%EF%BC%8CHexo-Github-%E4%B9%8B%E4%BA%8C/">分类和标签</a><br><a href="https://blog.anheyu.com/posts/sdxhu.html">插件配置</a><br><a href="https://twikoo.js.org/">文章评论</a></p>]]></content>
       
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
       
       
         <tags>
