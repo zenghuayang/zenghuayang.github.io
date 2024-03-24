@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>iOS 模拟器提示 Unable to boot the Simulator.</title>
+      <link href="/posts/e1cae1f0.html"/>
+      <url>/posts/e1cae1f0.html</url>
+      
+        <content type="html"><![CDATA[<p>解决：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo <span class="built_in">rm</span> -rf ~/Library/Developer/CoreSimulator/Caches</span><br></pre></td></tr></table></figure><br>不一定有效</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> iOS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>iOS17隐私清单和签名</title>
       <link href="/posts/208b625c.html"/>
       <url>/posts/208b625c.html</url>
