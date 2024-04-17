@@ -375,7 +375,7 @@
       <link href="/posts/d87f7e0c.html"/>
       <url>/posts/d87f7e0c.html</url>
       
-        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>阿拉伯地区的语言是从右到左展示的，页面需要做shi</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>阿拉伯地区的语言是从右到左展示的，页面需要做适配</p><h1 id="开发"><a href="#开发" class="headerlink" title="开发"></a>开发</h1><h2 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h2><ul><li>语言：Objc</li><li>布局：Masonry(大部分)</li><li>处理的内容：<ul><li>所有的 UIView </li></ul></li></ul>]]></content>
       
       
       <categories>
