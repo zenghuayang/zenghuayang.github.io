@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title></title>
+      <link href="/posts/0.html"/>
+      <url>/posts/0.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>Flutter SDK的版本管理成为了一个不可忽视的问题。不同项目可能需要依赖不同版本的Flutter SDK，频繁切换版本不仅耗时耗力，还容易引发版本冲突和兼容性问题</p><h2 id="FVM-管理版本"><a href="#FVM-管理版本" class="headerlink" title="FVM 管理版本"></a>FVM 管理版本</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p><strong>使用curl命令安装（适用于大多数Unix-like系统）</strong><br><code>curl -sL https://install.fvm.sh | bash</code></p><p><strong>使用Homebrew安装（适用于macOS用户）</strong><br><code>brew install fvm</code></p><p><strong>使用Chocolatey安装（适用于Windows用户）</strong><br><code>choco install fvm</code></p><h3 id="简单使用"><a href="#简单使用" class="headerlink" title="简单使用"></a>简单使用</h3><p><strong>查看已经安装的版本</strong><br><code>fvm list</code></p><p><strong>安装指定版本</strong><br><code>fvm install &lt;version&gt;</code></p><p><strong>切换指定版本</strong><br><code>fvm use &lt;version&gt;</code></p><p><strong>全局指定版本</strong>，影响该环境下的所有flutter项目<br><code>fvm global &lt;version&gt;</code></p><p><strong>为不同的flutter项目指定版本</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> project1</span><br><span class="line">fvm use &lt;version&gt;</span><br></pre></td></tr></table></figure></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> project2</span><br><span class="line">fvm use &lt;version&gt;</span><br></pre></td></tr></table></figure><h2 id="手动管理版本"><a href="#手动管理版本" class="headerlink" title="手动管理版本"></a>手动管理版本</h2><p><a href="https://docs.flutter.cn/release/archive">Flutter SDK 归档列表</a></p><ol><li>下载不同的flutter版本</li><li></li></ol><p>url: <a href="https://github.com/flutter/flutter.git">https://github.com/flutter/flutter.git</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 移动开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Flutter </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Flutter 全局颜色</title>
       <link href="/posts/e7f5ff98.html"/>
       <url>/posts/e7f5ff98.html</url>
