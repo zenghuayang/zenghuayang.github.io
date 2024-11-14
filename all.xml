@@ -8,7 +8,7 @@
       <link href="/posts/0.html"/>
       <url>/posts/0.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><h2 id="Listener"><a href="#Listener" class="headerlink" title="Listener"></a>Listener</h2><h3 id="主要属性"><a href="#主要属性" class="headerlink" title="主要属性"></a>主要属性</h3><ul><li><code>onPointerDown</code>: 当指针按下时触发。</li><li><code>onPointerMove</code>: 当指针移动时触发。</li><li><code>onPointerUp</code>: 当指针抬起时触发。</li><li><code>onPointerCancel</code>: 当指针操作被取消时触发。</li><li><code>onPointerHover</code>: 当指针悬停时触发（适用于桌面应用）。</li><li><code>onPointerSignal</code>: 当指针信号（如滚动）时触发。</li></ul><h2 id="GestureDetector"><a href="#GestureDetector" class="headerlink" title="GestureDetector"></a>GestureDetector</h2>]]></content>
       
       
       <categories>
