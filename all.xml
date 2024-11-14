@@ -8,6 +8,31 @@
       <link href="/posts/0.html"/>
       <url>/posts/0.html</url>
       
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 移动开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Flutter </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/posts/0.html"/>
+      <url>/posts/0.html</url>
+      
         <content type="html"><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>Flutter SDK的版本管理成为了一个不可忽视的问题。不同项目可能需要依赖不同版本的Flutter SDK，频繁切换版本不仅耗时耗力，还容易引发版本冲突和兼容性问题</p><h2 id="FVM-管理版本"><a href="#FVM-管理版本" class="headerlink" title="FVM 管理版本"></a>FVM 管理版本</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p><strong>使用curl命令安装（适用于大多数Unix-like系统）</strong><br><code>curl -sL https://install.fvm.sh | bash</code></p><p><strong>使用Homebrew安装（适用于macOS用户）</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew tap leoafarias/fvm  </span><br><span class="line">brew install fvm  </span><br></pre></td></tr></table></figure></p><p><strong>使用Chocolatey安装（适用于Windows用户）</strong><br><code>choco install fvm</code></p><h3 id="简单使用"><a href="#简单使用" class="headerlink" title="简单使用"></a>简单使用</h3><p><strong>查看已经安装的版本</strong><br><code>fvm list</code></p><p><strong>安装指定版本</strong><br><code>fvm install &lt;version&gt;</code></p><p><strong>切换指定版本</strong><br><code>fvm use &lt;version&gt;</code></p><p><strong>全局指定版本</strong>，影响该环境下的所有flutter项目<br><code>fvm global &lt;version&gt;</code></p><p><strong>为不同的flutter项目指定版本</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> project1</span><br><span class="line">fvm use &lt;version&gt;</span><br></pre></td></tr></table></figure></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> project2</span><br><span class="line">fvm use &lt;version&gt;</span><br></pre></td></tr></table></figure><h2 id="手动管理版本"><a href="#手动管理版本" class="headerlink" title="手动管理版本"></a>手动管理版本</h2><h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><p><a href="https://docs.flutter.cn/release/archive">Flutter SDK 归档列表</a></p><ol><li>下载不同的flutter版本</li><li>更新环境变量的PATH路径</li></ol><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>v3.22.0: /path/flutter_3.22.0<br>v3.24.0: /path/flutter_3.24.0<br>v3.24.4: /path/flutter_3.24.4</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.bash_profile</span><br><span class="line"><span class="comment"># flutter</span></span><br><span class="line"><span class="built_in">export</span> PATH=<span class="string">&quot;<span class="variable">$PATH</span>:/path/flutter_3.22.0/bin&quot;</span></span><br></pre></td></tr></table></figure><p>如果不同的项目要求使用不同的版本，就要修改PATH变量</p><h2 id="git-切换版本"><a href="#git-切换版本" class="headerlink" title="git 切换版本"></a>git 切换版本</h2><h3 id="安装-2"><a href="#安装-2" class="headerlink" title="安装"></a>安装</h3><p>url: <a href="https://github.com/flutter/flutter.git">https://github.com/flutter/flutter.git</a></p><ol><li>使用git clone 项目到本地上</li><li>切换到不同的标签分支：git checkout tag_version</li></ol><h3 id="使用-1"><a href="#使用-1" class="headerlink" title="使用"></a>使用</h3><p>这个方法也是需要设置 PATH 变量，只是不需要频繁修改，只需要设置 clone 项目的路径</p><p>Sourcetree git可视化客户端管理</p><h2 id="IED-配置版本路径"><a href="#IED-配置版本路径" class="headerlink" title="IED 配置版本路径"></a>IED 配置版本路径</h2><h3 id="Android-Studio"><a href="#Android-Studio" class="headerlink" title="Android Studio"></a>Android Studio</h3><p>Android Studio —&gt; Settings —&gt; Languages &amp; Frameworks —&gt; Flutter —&gt; 指定版本的路径</p><h3 id="VS-Code"><a href="#VS-Code" class="headerlink" title="VS Code"></a>VS Code</h3><p>修改 .vscode/settings.json 内容<br>  <code>&quot;dart.flutterSdkPath&quot;: &quot;/path/to/flutter_sdk&quot;</code></p><h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p><strong>通过 FVM 管理相对会比较便捷</strong></p>]]></content>
       
       
