@@ -4,31 +4,6 @@
   
     
     <entry>
-      <title>Instruments Time Profiler查找耗时的代码</title>
-      <link href="/posts/e73b4398.html"/>
-      <url>/posts/e73b4398.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>APP运行的过程中会有发现明显的卡顿现象，这个时候要定位是哪个地方执行了耗时操作。Xcode Time Profiler 是 Apple 提供的一款功能强大的性能分析工具，为了应用程序的优化而设计。</p><h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>主要分成五个步骤入手</p><ol><li>分析应用</li><li>过滤跟踪数据</li><li>简化调用树</li><li>开始分析耗时的堆栈信息</li><li>在xcode显示源码内容</li></ol><h1 id="步骤1-分析应用"><a href="#步骤1-分析应用" class="headerlink" title="步骤1: 分析应用"></a>步骤1: 分析应用</h1><p>以BelaHome 应用为例</p><p><strong>导航栏 – Product – Profile</strong></p><p><img src="https://raw.githubusercontent.com/zenghuayang/resources/master/202501240926693.png" alt="image.png|500"></p><p><strong>选择 Time Profiler</strong></p><p><img src="https://raw.githubusercontent.com/zenghuayang/resources/master/202501240926698.png" alt="image.png|500"></p><p><strong>选择左上角红点开始记录运行情况，获取到一段时间内的记录可以先停止</strong></p><p><img src="https://raw.githubusercontent.com/zenghuayang/resources/master/202501240926899.png" alt="image.png|500"></p><p><em>tip：最好是在真实的设备运行，用来获取较为真实准确的数据</em></p><h1 id="步骤2-过滤跟踪数据"><a href="#步骤2-过滤跟踪数据" class="headerlink" title="步骤2:过滤跟踪数据"></a>步骤2:过滤跟踪数据</h1><p><strong>查看到在整个录制会话中收集的样本数据</strong></p><p><img src="https://raw.githubusercontent.com/zenghuayang/resources/master/202501240927805.png" alt="image.png|500"></p><p><em>tip: 1.如果要分析某一段区域的数据，可以拖动鼠标截取</em></p><p><em>tip: 2.使用  <code>` ⌥ + 滚动` </code> 可放大和缩小轨道查看器</em></p><h1 id="步骤3-简化调用树"><a href="#步骤3-简化调用树" class="headerlink" title="步骤3:简化调用树"></a>步骤3:简化调用树</h1><p>看到的数据，一下子会不知道如何下手，要将关键的信息展示出来</p><p><img src="https://raw.githubusercontent.com/zenghuayang/resources/master/202501240929176.png" alt="image.png|500"></p><ul><li>Separate by Thread 按线程分隔，只有这样才能在调用路径中能够清晰看到占用CPU最大的线程.每个线程应该分开考虑。</li><li>Invert Call Tree 反转调用树，调用树倒返过来，将习惯性的从根向下一级一级的显示，如选上就会返过来从最底层调用向一级一级的显示（看个人习惯使用）</li><li>Hide System Libraries 隐藏系统库，显示自身选上后关心自身代码的耗时，忽略系统库的耗时</li></ul><h1 id="步骤4-开始分析耗时的堆栈信息"><a href="#步骤4-开始分析耗时的堆栈信息" class="headerlink" title="步骤4:开始分析耗时的堆栈信息"></a>步骤4:开始分析耗时的堆栈信息</h1><p><img src="http://192.168.10.2:83/download/attachments/105293260/image2024-12-17_13-40-29.png?version=1&amp;modificationDate=1734414029893&amp;api=v2" alt="" title="Mobile-日常工作 &gt; 2024/12/17 &gt; Instruments Time Profiler查找耗时的代码 &gt; image2024-12-17_13-40-29.png"></p><p>Wieight：函数运行的时间，这个时间是累积时间 （时间占比）</p><p>Symbol Name：被调用函数的符号信息</p><p>重点应该放在引用<strong>实际源文件的第一个跟踪上</strong>，因为在这里我们可以找到运行最慢的代码的位置。</p><p><img src="http://192.168.10.2:83/download/thumbnails/105293260/image2024-12-17_13-43-20.png?version=1&amp;modificationDate=1734414200729&amp;api=v2" alt="" title="Mobile-日常工作 &gt; 2024/12/17 &gt; Instruments Time Profiler查找耗时的代码 &gt; image2024-12-17_13-43-20.png"></p><p>双击进入可以查看到具体的<strong>调用信息和耗时的时间</strong></p><p><img src="http://192.168.10.2:83/download/attachments/105293260/image2024-12-17_13-44-3.png?version=1&amp;modificationDate=1734414243863&amp;api=v2" alt="" title="Mobile-日常工作 &gt; 2024/12/17 &gt; Instruments Time Profiler查找耗时的代码 &gt; image2024-12-17_13-44-3.png"></p><p><strong>分析：定位到耗时的位置后，分析可以得知，这个是因为频繁从磁盘读取文件导致的耗时，改成从内存中读取可以优化这个问题</strong></p><h1 id="步骤5-在xcode显示源码内容"><a href="#步骤5-在xcode显示源码内容" class="headerlink" title="步骤5:在xcode显示源码内容"></a>步骤5:在xcode显示源码内容</h1><p>分析结论后，可以进入源码中优化，需要在xcode中访问源码，右键访问 Reveal in Xcode</p><p><img src="http://192.168.10.2:83/download/attachments/105293260/image2024-12-17_13-49-7.png?version=1&amp;modificationDate=1734414547528&amp;api=v2" alt="" title="Mobile-日常工作 &gt; 2024/12/17 &gt; Instruments Time Profiler查找耗时的代码 &gt; image2024-12-17_13-49-7.png"></p><p>跳转进入xcode开始处理</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 移动开发 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> iOS/Flutter </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title></title>
       <link href="/posts/0.html"/>
       <url>/posts/0.html</url>
