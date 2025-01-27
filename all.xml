@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>github page绑定域名</title>
+      <link href="/posts/647d9a95.html"/>
+      <url>/posts/647d9a95.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>可以在搜索引擎中正常搜到博客的内容</p><h1 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h1><h2 id="绑定到百度中"><a href="#绑定到百度中" class="headerlink" title="绑定到百度中"></a>绑定到百度中</h2><p><em>github page 不支持收录到百度中，要使用自定义域名</em></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">url: https://blog.csdn.net/weixin_45961774/article/details/108402406</span><br><span class="line">title: &quot;github.io绑定域名_githubio绑定域名-CSDN博客&quot;</span><br><span class="line">description: &quot;文章浏览阅读7.8k次，点赞9次，收藏20次。在此之前已在 GitHub Pages 搭建好了博客，且能够通过 github.io 进行访问。下面介绍一下如何将 github.io 与域名绑定：1. 购买域名可以在阿里云等购买。此处有一个阿里云域名1元购的活动可以白嫖了解一下。https://wanwang.aliyun.com/domain/1yuan2. 在 GitHub Pages 仓库添加 CNAME 文件并填入将绑定的域名填入的域名不要包含 https:// 和 www。3. 进入 GitHub Pages 仓库的 _githubio绑定域名&quot;</span><br><span class="line">host: blog.csdn.net</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 移动开发/XXX </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Flutter/iOS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Flutter 手势</title>
       <link href="/posts/b52de819.html"/>
       <url>/posts/b52de819.html</url>
