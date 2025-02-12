@@ -341,31 +341,6 @@
     
     
     <entry>
-      <title>Hexo Giscus butterfly 评论</title>
-      <link href="/posts/8dfe8937.html"/>
-      <url>/posts/8dfe8937.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://zhuanlan.zhihu.com/p/603658639">Giscus 评论</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> iOS </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hexo 自动分类</title>
       <link href="/posts/fb8949b7.html"/>
       <url>/posts/fb8949b7.html</url>
@@ -383,6 +358,31 @@
         <tags>
             
             <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo Giscus butterfly 评论</title>
+      <link href="/posts/8dfe8937.html"/>
+      <url>/posts/8dfe8937.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://zhuanlan.zhihu.com/p/603658639">Giscus 评论</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> iOS </tag>
             
         </tags>
       
