@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>xcode lldb 调试</title>
+      <link href="/posts/5361df4.html"/>
+      <url>/posts/5361df4.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>使用xcode自带的LLDB工具帮助调试，介绍常用的指令可以帮助我们快速快速定位内容。</p><h1 id="LLDB-命令"><a href="#LLDB-命令" class="headerlink" title="LLDB 命令"></a>LLDB 命令</h1><p>平常调试比较偷懒的方式，就是打开侧边栏查看变量。LLDB拥有很多的指令，可以先看几个常用的命令</p><h2 id="p命令"><a href="#p命令" class="headerlink" title="p命令"></a>p命令</h2><p>可以调用方法、访问计算属性，可以将输入的内容当作代码执行。</p><h2 id="po命令"><a href="#po命令" class="headerlink" title="po命令"></a>po命令</h2><p>也可以执行代码，但是查看的内容比较直观，相对p指令，做了额外的翻译工作，让人比较容易看懂</p><h2 id="V命令"><a href="#V命令" class="headerlink" title="V命令"></a>V命令</h2><p>比较简单，只是简单的查看内存里的东西，不会执行额外的代码，不能访问计算属性、调用方法</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 移动开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> iOS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Flutter 3.29</title>
       <link href="/posts/57ed93bf.html"/>
       <url>/posts/57ed93bf.html</url>
